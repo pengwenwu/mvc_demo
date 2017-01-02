@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function queren() {
+            return window.confirm("你真的要删除吗?");//只能返回true或false
+        }
+    </script>
+</head>
+<body>
+<h3><a href="?c=Product">商品列表</a> <a href="?c=User">用户列表</a></h3>
+<hr>
+<table border="1">
+    <caption><h2>用户列表</h2></caption>
+    <?php
+    foreach($data1 as $key => $rec){
+    ?>
+    <tr>
+        <td><?php echo $rec['user_name'];?></td>
+        <td><?php echo $rec['user_age'];?></td>
+        <td><?php echo $rec['user_edu'];?></td>
+        <td><?php echo $rec['user_hob'];?></td>
+        <td><?php echo $rec['user_ori'];?></td>
+        <td><?php echo $rec['user_reg'];?></td>
+        <td>
+            <a href="?c=User&&a=Detail&&id=<?php echo $rec['user_id'];?>">详细信息</a> |
+            <a href="?c=User&&a=EditForm&&id=<?php echo $rec['user_id'];?>">修改</a> |
+            <a href="?c=User&&a=Del&&id=<?php echo $rec['user_id'];?>" onclick='return queren()'>删除</a>
+        </td>
+    </tr>
+    <?php
+    }
+    ?>
+</table>
+当前用户总数为：<?php echo $data2?>&nbsp;<a href="?c=User&&a=AddForm">添加用户</a>
+<hr>
+<a href="?p=back&&c=Admin&&a=Index">后台页面</a>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="?a=AddNewUser" method="post">
+    <table border="1" rules="all">
+        <caption><h2>添加数据</h2></caption>
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="pwd"></td>
+        </tr>
+        <tr>
+            <td>年龄：</td>
+            <td><input type="text" name="age"></td>
+        </tr>
+        <tr>
+            <td>学历：</td>
+            <td>
+                <select name="education">
+                    <option value="1">研究生</option>
+                    <option value="2">本科</option>
+                    <option value="3">专科</option>
+                    <option value="4">高中</option>
+                    <option value="5">初中</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>兴趣：</td>
+            <td>
+                <input type="checkbox" name="hobby[]" value="1">排球
+                <input type="checkbox" name="hobby[]" value="2">篮球
+                <input type="checkbox" name="hobby[]" value="4">足球
+                <input type="checkbox" name="hobby[]" value="8">羽毛球
+                <input type="checkbox" name="hobby[]" value="16">游泳
+            </td>
+        </tr>
+        <tr>
+            <td>籍贯：</td>
+            <td>
+                <input type="radio" name="origin" value="1">江苏
+                <input type="radio" name="origin" value="2">浙江
+                <input type="radio" name="origin" value="3">湖南
+                <input type="radio" name="origin" value="4">河北
+                <input type="radio" name="origin" value="5">辽宁
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="添加">&nbsp;&nbsp;
+                <input type="reset" value="重置">&nbsp;&nbsp;
+                <input type="button" value="返回" onclick="history.go(-1)">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

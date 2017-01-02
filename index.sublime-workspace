@@ -1,0 +1,276 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"airl",
+				"airlinearr"
+			],
+			[
+				"ch",
+				"child"
+			],
+			[
+				"city",
+				"city"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"mean",
+				"meaning	(dic.xml)"
+			],
+			[
+				"d",
+				"dict.xml"
+			],
+			[
+				"new",
+				"newbook"
+			],
+			[
+				"add",
+				"addChild"
+			],
+			[
+				"sex",
+				"sxe_update_book.xml"
+			],
+			[
+				"boo",
+				"bookstore.xml	(sxe_select_book.php)"
+			],
+			[
+				"Sim",
+				"simplexml_load_file"
+			],
+			[
+				"sxe_",
+				"sxe_update_book.php"
+			],
+			[
+				"pri",
+				"price	(book_table.php)"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"forea",
+				"foreach	(sxe_select_book.php)"
+			],
+			[
+				"simple",
+				"simplexml_load_file"
+			],
+			[
+				"simp",
+				"simplexml_load_file"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 321.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/amp/php/php.ini",
+		"/E/amp_items/xml/airline.php",
+		"/E/amp_items/xml/sxe_select_dic.php",
+		"/E/amp_items/xml/bookstore.xml",
+		"/E/amp_items/xml/dic.xml",
+		"/E/amp_items/xml/dict.xml",
+		"/E/amp_items/xml/select_dic.php",
+		"/E/amp_items/xml/sxe_add_book.php",
+		"/E/amp_items/xml/sxe_add_book.xml",
+		"/E/amp_items/xml/sxe_select_book.php",
+		"/E/amp_items/xml/sxe_update_book.php",
+		"/E/amp_items/xml/sxe_delete_book.php",
+		"/E/amp_items/xml/sxe.php",
+		"/E/amp_items/xml/add_dict.html",
+		"/E/amp_items/xml/select_dict.html",
+		"/E/amp_items/xml/update_book.php",
+		"/E/amp_items/xml/select_dic.html",
+		"/E/amp_items/xml/delete2_bookstore.xml",
+		"/E/amp_items/xml/delete1_book.php",
+		"/E/amp_items/homework/zuoye6_gongyueshu.php",
+		"/E/Sublime Text Build 3114 x64/Data/Packages/DocBlockr/Base File.sublime-settings",
+		"/E/Sublime Text Build 3114 x64/Data/Packages/User/Base File.sublime-settings",
+		"/E/Sublime Text Build 3114 x64/Data/Packages/DocBlockr/README.md",
+		"/E/amp_items/xml/add_dict.php",
+		"/E/amp_items/homework/zuoye16_liuyanban.php",
+		"/E/amp_items/homework/zuoye16_liuyanban_detail.php",
+		"/E/Sublime Text Build 3114 x64/default.php",
+		"/E/Sublime Text Build 3114 x64/Data/Packages/User/bh_tag.sublime-settings",
+		"/E/Sublime Text Build 3114 x64/a.html",
+		"/E/Sublime Text Build 3114 x64/ssas.js"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n    ",
+			"mean",
+			"explain",
+			"prices"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"      <"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

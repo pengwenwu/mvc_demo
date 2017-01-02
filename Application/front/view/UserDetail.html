@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table width="300">
+        <caption><h2>用户 <?php echo $result['user_name']?> 的详细信息</h2></caption>
+    <tr>
+        <td>姓名：</td><td><?php echo $result['user_name']?></td>
+    </tr>
+    <tr>
+        <td>年龄：</td><td><?php echo $result['user_age']?></td>
+    </tr>
+    <tr>
+        <td>学历：</td><td><?php echo $result['user_edu'];?></td>
+    </tr>
+    <tr>
+        <td>兴趣爱好：</td><td><?php echo $result['user_hob'];?></td>
+    </tr>
+    <tr>
+        <td>户籍：</td><td><?php echo $result['user_ori'];?></td>
+    </tr>
+    <tr>
+        <td>注册时间：</td><td><?php echo $result['user_reg'];?></td>
+    </tr>
+</table>
+</body>
+</html>

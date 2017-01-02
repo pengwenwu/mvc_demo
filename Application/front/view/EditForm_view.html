@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="?a=UpdateUser" method="post">
+    <input type="hidden" name="id" value="<?php echo $_GET['id']?>">
+    <table border="1" rules="all">
+        <caption><h2>修改数据</h2></caption>
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" name="name" value="<?php echo $result['user_name']?>"></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="pwd"></td>
+        </tr>
+        <tr>
+            <td>年龄：</td>
+            <td><input type="text" name="age" value="<?php echo $result['user_age']?>"></td>
+        </tr>
+        <tr>
+            <td>学历：</td>
+            <td>
+                <select name="education">
+                    <option value="1" <?php if($result['user_edu'] == "研究生"){echo "selected";}?>>研究生</option>
+                    <option value="2" <?php if($result['user_edu'] == "本科"){echo "selected";}?>>本科</option>
+                    <option value="3" <?php if($result['user_edu'] == "专科"){echo "selected";}?>>专科</option>
+                    <option value="4" <?php if($result['user_edu'] == "高中"){echo "selected";}?>>高中</option>
+                    <option value="5" <?php if($result['user_edu'] == "初中"){echo "selected";}?>>初中</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>兴趣：</td>
+            <td>
+                <input type="checkbox" name="hobby[]" value="1" <?php if(in_array("排球",$aihao)){echo "checked";}?>>排球
+                <input type="checkbox" name="hobby[]" value="2" <?php if(in_array("篮球",$aihao)){echo "checked";}?>>篮球
+                <input type="checkbox" name="hobby[]" value="4" <?php if(in_array("足球",$aihao)){echo "checked";}?>>足球
+                <input type="checkbox" name="hobby[]" value="8" <?php if(in_array("羽毛球",$aihao)){echo "checked";}?>>羽毛球
+                <input type="checkbox" name="hobby[]" value="16" <?php if(in_array("游泳",$aihao)){echo "checked";}?>>游泳
+            </td>
+        </tr>
+        <tr>
+            <td>籍贯：</td>
+            <td>
+                <input type="radio" name="origin" value="1" <?php if($result['user_ori'] == "江苏"){echo "checked";}?>>江苏
+                <input type="radio" name="origin" value="2" <?php if($result['user_ori'] == "浙江"){echo "checked";}?>>浙江
+                <input type="radio" name="origin" value="3" <?php if($result['user_ori'] == "湖南"){echo "checked";}?>>湖南
+                <input type="radio" name="origin" value="4" <?php if($result['user_ori'] == "河北"){echo "checked";}?>>河北
+                <input type="radio" name="origin" value="5" <?php if($result['user_ori'] == "辽宁"){echo "checked";}?>>辽宁
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="修改">&nbsp;&nbsp;
+                <input type="button" value="返回" onclick="javascript:history.go(-1)">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <script>
+        function queren() {
+            return window.confirm("你真的要删除吗?");//只能返回true或false
+        }
+    </script>
+</head>
+<body>
+<h3><a href="?c=Product">商品列表</a> <a href="?c=User">用户列表</a></h3>
+<hr>
+<table border="1">
+    <caption><h2>商品列表</h2></caption>
+    <?php
+    foreach($data1 as $key => $rec){
+    ?>
+    <tr>
+        <td><?php echo $rec['pro_id'];?></td>
+        <td><?php echo $rec['pro_name'];?></td>
+        <td><?php echo $rec['protype_name'];?></td>
+        <td><?php echo $rec['price'];?></td>
+        <td><?php echo $rec['pinpai'];?></td>
+        <td><?php echo $rec['chandi'];?></td>
+        <td>
+            <a href="?c=Product&&a=Del&&id=<?php echo $rec['pro_id'];?>" onclick='return queren()'>删除</a>
+        </td>
+    </tr>
+    <?php
+    }
+    ?>
+</table>
+当前商品总数为：<?php echo $data2?>
+<hr>
+<a href="?p=back&&c=Admin&&a=Index">后台页面</a>
+</body>
+</html>
